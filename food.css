@@ -1,0 +1,260 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* logo design*/
+.logo{
+    margin: 5px 15px;
+}
+.logo img{
+    width: 50px;
+    filter: invert(0%);
+    border-radius: 100px;
+    margin: 5px 5px;
+    height: 40px;
+
+    
+}
+/* navigation design */
+.navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+.navbar ul{
+    display: flex;
+    font-family: 'Moon Dance', cursive;
+}
+.navbar::before{
+    content: "";
+    background-color: cornflowerblue;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    opacity: 0.4
+    
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    
+
+
+}
+.navbar ul li a{
+    display: block;
+    padding: 3px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+.navbar ul li a:hover{
+    
+    color: black;
+    background-color: rosybrown;
+    
+    
+} 
+/* home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 100px;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    
+}
+#home::before{
+    content: "";
+    background-image: url('images/food\ pic3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.98
+}
+#home h1{
+    color: rosybrown;
+    text-align: center;
+    font-size: 2.8rem;
+    
+}
+#home p{
+    color: rosybrown;
+    text-align: center;
+    font-size: 1.3rem;
+    
+}
+
+/* service sectiom */
+.services-container{
+    background-image: url('images/service\ back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#services{
+    margin: 9px;
+    display: flex;
+    position: relative;
+    
+}
+#services .box{
+    border: 2px solid brown;
+    border-radius: 10px;
+    margin: 3px 6px;
+    padding: 30px;
+    background-color: rgb(238, 222, 222);
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    
+    
+}
+#services .box p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.0rem;
+}
+/* client section*/
+#client-section{
+    height: 300px;
+    color: whitesmoke;
+    
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background-image: url('images/client\ back2.jpg');
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 15px;
+    
+}
+#clients img{
+    height: 50px;
+    
+    
+}
+
+
+
+
+/* contact section*/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background-image: url('images/contact\ us.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 0.8rem;
+    border-style: none;
+    border: 2px solid lightgrey;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-style: none;
+}
+.btn2{
+    width: 200px;
+            background-color: rgb(12, 135, 236);
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px 30px;
+            padding: 10px;
+           border-style: none;
+            text-align: center;
+            font-size: 20px;
+}
+   
+footer{
+    
+    background: black;
+    color: white;
+    padding: 9px 5px;
+}
+.center{
+    
+    position: relative;
+}
+
+
+
+
+/* utility classes*/
+.h-primary{
+    font-size: 3.1rem;
+    padding:8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.h-secondary{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+    padding:10px;
+    color: black;
+    
+}
+.btn{
+    padding: 6px 15px;
+    border: 2px solid whitesmoke;
+    background-color: darkred;
+    color: white;
+    margin: 17px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
